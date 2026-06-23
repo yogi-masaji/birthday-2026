@@ -146,7 +146,7 @@ export default function App() {
       }, 2200),
       pushIntroBubble("Dear Zahra pacar ak tercinta", 3700),
       pushIntroBubble(
-        "dari yang pertama kali km marahin org salah nomer sampe sekarang, masih betah aja gemes liat km wkwkwk",
+        "Happy birthday buat pacar aku tercinta yang paling cantik. Aku berharap hari ini penuh sama hal-hal yang bikin kamu bahagia. Makasih banyak ya udah ada di hidup aku dan selalu nemenin aku sejauh ini. Semoga kita bisa terus bareng-bareng selamanya. Aku selalu doain kamu sehat, panjang umur, sukses, dan segala urusan kamu selalu dipermudah. I'm so proud of you and I love you more than words can say 💞",
         5400,
       ),
     ];
