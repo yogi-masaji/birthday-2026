@@ -1,4 +1,5 @@
-import { useState, useEffect, useRef, FormEvent } from "react";
+import { useState, useEffect, useRef } from "react";
+// import type { FormEvent } from "react";
 import "./index.css";
 
 interface Message {
@@ -96,7 +97,7 @@ export default function App() {
     return () => timers.forEach(clearTimeout);
   }, []);
 
-  const handleSendMessage = async (e: FormEvent) => {
+  const handleSendMessage = async (e: React.SubmitEvent<HTMLFormElement>) => {
     e.preventDefault();
     const text = inputValue.trim();
     if (!text || isSending) return;
@@ -160,8 +161,7 @@ export default function App() {
         {
           id: Math.random().toString(),
           role: "assistant",
-          content:
-            "aduh koneksi cinta kita kebanyakan kupu-kupu, coba kirim lagi ya sayang 🦋",
+          content: "Aapa bub? coba kirim ulanggg sinyalku jelek",
           time: timeNow(),
         },
       ]);
@@ -278,27 +278,27 @@ export default function App() {
           <p>(real moments, no debat ya yang)</p>
           <div className="reasons">
             <div className="reason">
-              <span className="num">1.</span> dari chat pertama km galak bgt
-              "salah nomor kali mas nya" eh malah jadi sayang sampe sekarang
+              <span className="className">1.</span> dari chat pertama km galak
+              bgt "salah nomor kali mas nya" eh malah jadi sayang sampe sekarang
               wkwkwk
             </div>
             <div className="reason">
-              <span class="num">2.</span> tiap malem bawel nyuruh km bobo,
-              padahal akunya yg susah tidur klo blm ngucapin "bobo yang"
+              <span className="className">2.</span> tiap malem bawel nyuruh km
+              bobo, padahal akunya yg susah tidur klo blm ngucapin "bobo yang"
             </div>
             <div className="reason">
-              <span class="num">3.</span> bakmi seafood D'cost itu enak, tp
-              tetep ga seenak dengerin km cerita "AAAAA senangg" pas masakan km
-              jadi
+              <span className="className">3.</span> bakmi seafood D'cost itu
+              enak, tp tetep ga seenak dengerin km cerita "AAAAA senangg" pas
+              masakan km jadi
             </div>
             <div className="reason">
-              <span class="num">4.</span> km kuat banget, kerja sampe malem,
-              masih sempet bilang "jangan lupa solat ya mas" ke aku
+              <span className="className">4.</span> km kuat banget, kerja sampe
+              malem, masih sempet bilang "jangan lupa solat ya mas" ke aku
             </div>
             <div className="reason">
-              <span class="num">5.</span> happy birthday, pacar ak tercinta.
-              makin nambah umurnya, makin nambah jg sabarnya ngadepin aku yg
-              bawel 💗
+              <span className="className">5.</span> happy birthday, pacar ak
+              tercinta. makin nambah umurnya, makin nambah jg sabarnya ngadepin
+              aku yg bawel 💗
             </div>
           </div>
         </div>
